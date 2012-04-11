@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+/*   background: #FFF; */
+  color: #494949;
+  font: normal 14px/1.4em Helvetica, Arial, sans-serif;
+}
+
+/*------------------- HEADERS -------------------*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.8em 0 0.5em;
+  padding: 0;
+  font-weight: normal;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {font-size: 2.2em;}
+h2 {font-size: 1.86em;}
+h3 {font-size: 1.57em;}
+h4 {font-size: 1.43em;}
+h5 {font-size: 1.3em;}
+h6 {font-size: 1.14em;}
+/*------------------- HEADERS -------------------*/
+
+/*------------------- TEXT/LINKS/IMG -------------------*/
+p {margin: 0.5em 0;}
+
+em {font-style:italic;}
+
+strong {font-weight:bold;}
+
+a:link, a:visited {color: #027AC6; text-decoration: none; outline:none;}
+
+a:hover {color: #0062A0; text-decoration: underline;}
+
+a:active, a.active {color: #5895be;}
+
+img, a img {border: none;}
+
+abbr,acronym {
+	/*indicating to users that more info is available */
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+
+/*------------------- TEXT/LINKS/IMG -------------------*/
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+
+/*Change in format*/
+ul, blockquote, quote, code, fieldset {margin: 1em 0;}
+
+
+/*------------------- LISTS -------------------*/
+
+ul {margin-left:2em;}
+
+ol,ul,dl {margin-left:2em;}
+ol, ul, dl {margin-left:2em;}
+ul, ol {margin: 0.5em 0 1em; padding: 0;}
+ol li, ul li {margin: 0.5em 0 0.5em 2em;}
+ul ul li {margin-left: 0.8em;}
+
+ul li {padding: 0 0 0.4em 0.5em; list-style: disc outside;}
+ul li ul li {list-style: circle outside;}
+ul li ul, ul li ul li:last-child {padding-bottom:0; margin-bottom:0;}
+
+ol li {padding: 0 0 0.4em; list-style: decimal outside;}
+
+dl {margin: 0.5em 0 1em 2em;}
+dl dt {font-weight:bold;}
+dl dd {margin: 0 0 0.5em 2em;}
+
+/*------------------- LISTS -------------------*/
+
+
+/*------------------- FORMS -------------------*/
+input {
+  font: 0.8em/1.5em Verdana, sans-serif;
+  color: #494949;
+}
+textarea, select {
+  font: 0.8em/1.5em Verdana, sans-serif;
+  color: #494949;
+}
+textarea {resize:none;}
+fieldset {
+	display: block;
+  border: 2px groove threedface;
+}
+/*------------------- FORMS -------------------*/
+
+
+/*------------------- TABLES -------------------*/
+
+table {margin: 16px 0; width: 90%;}
+
+thead th {
+  border-bottom: 2px solid #d3e7f4;
+  color: #494949;
+  font-weight: bold;
+}
+
+th a:link, th a:visited {
+  color: #6f9dbd;
+}
+
+td, th {padding: 4px 6px; border:1px solid #000;}
+
+th {
+  color:#FFF;
+	background:#666;
+	background:rgba(0,0,0,0.6);
+}
+
+tr:nth-child(2n) td {
+	background:#ddd;
+	background:rgba(0,0,0,0.1);
+}
+
+caption {margin-bottom:8px; text-align:center;}
+
+/*------------------- TABLES -------------------*/
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
